@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 import { PublishPlatform, PublishResult } from '@/types'
-import { publishToX } from '@/lib/publishers/x'
-import { publishToInstagram } from '@/lib/publishers/instagram'
-import { publishToTiktok } from '@/lib/publishers/tiktok'
-import { publishToYouTube } from '@/lib/publishers/youtube'
-import { publishToFacebook } from '@/lib/publishers/facebook'
-import { publishToLinkedIn } from '@/lib/publishers/linkedin'
+import { publishToX } from '@lib/publishers/x'
+import { publishToInstagram } from '@lib/publishers/instagram'
+import { publishToTiktok } from '@lib/publishers/tiktok'
+import { publishToYouTube } from '@lib/publishers/youtube'
+import { publishToFacebook } from '@lib/publishers/facebook'
+import { publishToLinkedIn } from '@lib/publishers/linkedin'
 
 const schema = z.object({
   mediaUrl: z.string().url(),

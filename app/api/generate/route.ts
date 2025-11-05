@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
-import { generateMedia } from '@/lib/generate'
+import { generateMedia } from '@lib/generate'
 
 const schema = z.object({
   type: z.enum(['image', 'video']),
