@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "ignoreCommand": "",
+  "github": { "enabled": false },
+  "framework": "nextjs"
+}

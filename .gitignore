@@ -915,3 +915,16 @@ config/database.yml
 *.zip
 
 # ===== END =====
+ 
+# ===== PROJECT EXCEPTIONS =====
+# Ensure critical config files are tracked
+!package.json
+!tsconfig.json
+!next.config.js
+!postcss.config.js
+!tailwind.config.ts
+!vercel.json
+!next-env.d.ts
+!app/**
+!src/**
+!types/**
